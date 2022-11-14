@@ -58,7 +58,7 @@ class Conta
         return $this->titular->mostrarNometitular();
     }
 
-    public function mostrarCpfTitular(): string
+    public function mostrarCpfTitular(): Cpf
     {
         return $this->titular->mostrarCpfTitular();
     }

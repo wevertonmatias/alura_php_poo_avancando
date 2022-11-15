@@ -2,6 +2,8 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
+use Alura\Banco\Modelo\Conta\Titular;
+
 class Conta
 {
     private float $saldo = 0;
@@ -53,16 +55,6 @@ class Conta
     public function mostrarSaldo(): void
     {
         echo $this->saldo;
-    }
-
-    public function mostrarNomeTitular(): string
-    {
-        return $this->titular->mostrarNometitular();
-    }
-
-    public function mostrarCpfTitular(): Cpf
-    {
-        return $this->titular->mostrarCpfTitular();
     }
 
     public static function numeroDeContas(): int

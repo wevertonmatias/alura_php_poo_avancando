@@ -1,11 +1,6 @@
 <?php
 
-require_once "Modelo/Pessoa.php";
-require_once "Modelo/Funcionario.php";
-require_once "Modelo/Endereco.php";
-require_once "Modelo/Cpf.php";
-require_once "Modelo/Conta/Titular.php";
-require_once "Modelo/Conta/Conta.php";
+require_once "autoload.php";
 
 use Alura\Banco\Modelo\Cpf;
 use Alura\Banco\Modelo\Funcionario;

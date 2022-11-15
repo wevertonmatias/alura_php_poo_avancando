@@ -1,6 +1,9 @@
 <?php
 
-Class Cpf{
+namespace Modelo;
+
+Class Cpf
+{
     private string $cpf;
 
     public function __construct(string $cpf)

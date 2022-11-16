@@ -26,6 +26,8 @@ class Conta
 
     public function sacar($valor)
     {
+        $tarifa = $valor * 0.05;
+        $valor += $tarifa;
         if($this->saldo < $valor) {
             echo "Saldo indisponível";
             return;

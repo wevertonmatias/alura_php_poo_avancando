@@ -13,7 +13,7 @@ $conta = new Conta(
         'Weverton',
         new Cpf ('123.456.789-10'),
         new Endereco('Maceió', 'Lala', 'Tete', '3223-8922'),
-    )
+    ), 2
     );
 
 $conta->depositar(500);

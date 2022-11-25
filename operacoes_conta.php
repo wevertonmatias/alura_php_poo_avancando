@@ -4,6 +4,7 @@
 use Alura\Banco\Modelo\Cpf;
 use Alura\Banco\Modelo\Conta\Titular;
 use Alura\Banco\Modelo\Conta\Conta;
+use Alura\Banco\Modelo\Conta\ContaCorrente;
 use Alura\Banco\Modelo\Conta\ContaPoupanca;
 use Alura\Banco\Modelo\Endereco;
 

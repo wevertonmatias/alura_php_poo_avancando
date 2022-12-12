@@ -6,7 +6,7 @@ use Alura\Banco\Modelo\Pessoa;
 use Alura\Banco\Modelo\Cpf;
 
 
-Class Funcionario extends Pessoa
+abstract Class Funcionario extends Pessoa
 {
     private string $cargo;
     private float $salario;
@@ -40,6 +40,15 @@ Class Funcionario extends Pessoa
             return $this->salario;
         }
         return $this->salario * 0.1;
+    }
+
+    public function receberAumento(float $valorAumento): void
+    {
+        if($valorAumento < 0){
+            echo 'Valor deve ser maior que zero';
+            return;
+        }
+        $this->salario += $valorAumento;
     }
     
 }

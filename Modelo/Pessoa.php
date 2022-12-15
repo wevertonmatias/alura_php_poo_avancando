@@ -26,7 +26,7 @@ abstract class Pessoa
         return $this->cpf->recuperarNumero();
     }
 
-    protected function validarNome(string $nome): void
+    final protected function validarNome(string $nome): void
     {
         if(strlen($nome) < 5){
             echo "Nome precisa ter pelo menos 5 caracteres.";
